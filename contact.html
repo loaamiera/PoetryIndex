@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
+    <title> Homepage. </title>
+    <link rel = "stylesheet" href = "styles.css"/>
+    <link rel = "stylesheet" href = "background.css"/>
+</head>
+
+<header>
+    <nav class = "center">
+        <ul class = "row">
+            <li> <a class = "button" href = "index.html"> Home </a href>  </li>
+            <li> <a class = "button" href = "home.html"> Selections </a href>  </li>
+            <li> <a  class = "button" href = "info.html"> Author </a href>  </li>
+            <li><a href = "https://www.instagram.com/amira.e.v.e/">  <img class = "image" src = "instagram.png" alt = "Screenshot of my Instagram"> </a></li>
+        </ul>
+    </nav>
+    <h1>
+    Contact.
+    </h1>
+    <h2>
+    Want to give feedback? Shoot me an email!
+    </h2>
+</header>
+
+<body>
+    <main>
+        <form method="post" action = "MAILTO: amierasdocs@gmail.com" enctyp = "text/plain" onsubmit="return validateForm(this);">
+            <label for="name">Name    :</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email   :</label>
+            <input type = "text" id="email" name="email" rows="5" cols="10" ><br>
+            <label for="comments">Comments:</label>
+            <input style="height:100px;" type="text" id="comments" name="comments"><br>
+            <input type="submit" value="Submit">
+        </form>
+          <script>
+            function validateForm() {
+              let name = document.getElementById("name").value;
+              let email = document.getElementById("email").value;
+            
+              if (email == "") {
+                alert("Email must be filled out.");
+                return false; 
+              }
+            
+             if (comments == "") {
+                alert("Please leave a comment.");
+                return false; 
+              }
+              return true; 
+            }
+        </script>
+    <div class = "clear">
+        <footer>
+            Amira Brown
+            last edited
+            <script>
+            var date = document.lastModified;
+            8
+            document.write(date);
+            </script>
+        </footer>
+    </div>
+    </main>
+</body>
